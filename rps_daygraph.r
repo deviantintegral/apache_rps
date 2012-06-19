@@ -13,7 +13,7 @@ max_clients <- 50;
 
 # Return a moving average based off of the last n items.
 ma <- function(x, n=5) {
-  filter(x,rep(1/n,n), sides=1)
+  filter(x,rep(1/n,n), sides=1);
 }
 
 rps <- read.csv(file=csv, head=TRUE, sep=",");
