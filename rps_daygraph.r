@@ -19,7 +19,7 @@ ma <- function(x, n=5) {
 rps <- read.csv(file=csv, head=TRUE, sep=",");
 a <- ma(rps$requests_per_second, 5);
 
-png(filename="rps-may-31.png", width=800, height=600, units="px", pointsize = 12);
+png(filename=paste(csv, ".png", sep=""), width=800, height=600, units="px", pointsize = 12);
 
 plot(rps$requests_per_second, col="darkblue", xlab="Time", ylab="Requests", xaxt="n", type="h");
 a <- ma(rps$requests_per_second, 5);
