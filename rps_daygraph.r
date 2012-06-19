@@ -16,8 +16,8 @@ ma <- function(x, n=5) {
   filter(x,rep(1/n,n), sides=1);
 }
 
+# Read in the CSV.
 rps <- read.csv(file=csv, head=TRUE, sep=",");
-a <- ma(rps$requests_per_second, 5);
 
 png(filename=paste(csv, ".png", sep=""), width=800, height=600, units="px", pointsize = 12);
 
