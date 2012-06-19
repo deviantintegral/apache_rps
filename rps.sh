@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Loop to grep for stats for a given hour of the day.
 hour_grep() {
   for m in {0..59}
   do
@@ -8,6 +9,7 @@ hour_grep() {
   done
 }
 
+# Loop to grep for stats for a given minute of an hour.
 minute_grep() {
   for s in {0..59}
   do
@@ -16,6 +18,7 @@ minute_grep() {
   done
 }
 
+# Determine how many requests completed in a given second.
 second_grep() {
   COUNT=`grep $1 $FILE | wc -l`
   echo "$1,$COUNT" >> rps_may31.csv
