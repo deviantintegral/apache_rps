@@ -7,6 +7,13 @@ something like mod\_status and Munin. If you run into a situation where all you
 have is the access\_log file, this will allow a reasonable approximation of what
 mod\_status would have returned.
 
+A sample graph showing a loaded server and the request spikes:
+
+<figure>
+  ![Sample graph](http://deviantintegral.github.com/apache_rps/images/rps-graph-sample.png)
+  <figcaption class="center">_A sample graph showing a loaded server subjec to request spikes_</figcaption>
+</figure>
+
 Usage
 =====
 
