@@ -1,10 +1,11 @@
 Synopsis
 ========
 
-These scripts allow for post-mortem analysis of an Apache access\_log file.
-Normally this is graphed with something like mod\_status and Munin. If you run
-into a situation where all you have is the access\_log file, this will allow a
-reasonable approximation of what mod\_status would have returned.
+These scripts allow for post-mortem analysis of an Apache access\_log file to
+determine the number of requests per second. Normally this is graphed with
+something like mod\_status and Munin. If you run into a situation where all you
+have is the access\_log file, this will allow a reasonable approximation of what
+mod\_status would have returned.
 
 Usage
 =====
