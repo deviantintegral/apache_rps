@@ -1,7 +1,11 @@
 # An R script to generate graphs for Apache accesses. Histograms are drawn
 # for the number per second, per 5 seconds, per 60 seconds, and per hour.
 
-ma <- function(x,n=5){filter(x,rep(1/n,n), sides=1)}
+# Return a moving average based off of the last n items.
+ma <- function(x, n=5) {
+  filter(x,rep(1/n,n), sides=1)
+}
+
 max_clients <- 50;
 
 rps <- read.csv(file="rps_may31.csv", head=TRUE, sep=",");
