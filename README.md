@@ -12,11 +12,11 @@ Usage
 Note that apache\_rps.sh requires bash 4.0+ due to the use of associative
 arrays.
 
-    $ ./apache\_rps.sh <day> <access\_log> <destination csv>
+    $ ./apache_rps.sh <day> <access_log> <destination csv>
 
 Day should be in the format of a date in your access\_log, such as:
 
-    $ ./apache\_rps.sh 01/Jun/2012 access\_log 20120601.csv
+    $ ./apache_rps.sh 01/Jun/2012 access_log 20120601.csv
 
 Graphs are generated using R, where '100' is the maximum simultaneous
 connections your server is expected to support:
