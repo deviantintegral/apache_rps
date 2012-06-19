@@ -41,6 +41,8 @@ TMPOUT=`mktemp -t apache_rps_out` || exit 1
 if [ -z $3 ]
 then
   echo "Usage: apache_rps.sh <day> <access_log> <destination csv>"
+  echo "Day should be in the format of a date in your access_log, such as:"
+  echo "    01/Jun/2012"
   exit 1
 fi
 
