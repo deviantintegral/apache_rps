@@ -9,11 +9,9 @@ mod\_status would have returned.
 
 A sample graph showing a loaded server and the request spikes:
 
-![Sample graph](http://deviantintegral.github.com/apache_rps/images/rps-graph-sample.png)
-
 <figure>
-![Sample graph](http://deviantintegral.github.com/apache_rps/images/rps-graph-sample.png)
-<figcaption class="center">_A sample graph showing a loaded server subjec to request spikes_</figcaption>
+  <img alt="Sample graph" src="http://deviantintegral.github.com/apache_rps/images/rps-graph-sample.png" />
+  <figcaption class="center"><em>A sample graph showing a loaded server subject to request spikes</em></figcaption>
 </figure>
 
 Usage
