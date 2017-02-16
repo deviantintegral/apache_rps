@@ -36,7 +36,7 @@ second_grep() {
 DAY=$1
 FILE=$2
 OUT=$3
-TMPOUT=`mktemp -t apache_rps_out` || exit 1
+TMPOUT=`mktemp -t apache_rps_out.XXX` || exit 1
 
 if [ -z $3 ]
 then
@@ -55,7 +55,7 @@ do
   HOUR=`printf "%02d" $h`
   # Split the apache log file into 1-hour chunks for improved performance in
   # grep.
-  TMPLOG=`mktemp -t apache_rps_${HOUR}` || exit 1
+  TMPLOG=`mktemp -t apache_rps_${HOUR}.XXX` || exit 1
   TMPLOGS["${HOUR}"]=$TMPLOG
 
   grep $DAY:$HOUR $FILE > $TMPLOG
